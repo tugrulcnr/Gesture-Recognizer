@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JestAlgilayiciler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istanbul" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-MW-dCD">
+                                <rect key="frame" x="31" y="109" width="352" height="224"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="İSTANBUL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwK-AC-GAS">
+                                <rect key="frame" x="128" y="379" width="159" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ywt-VC-A18"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3OJ-MW-dCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gx-87-aku"/>
+                            <constraint firstItem="qwK-AC-GAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="5Rl-H7-Bao"/>
+                            <constraint firstItem="3OJ-MW-dCD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="9kX-pv-K0V"/>
+                            <constraint firstItem="3OJ-MW-dCD" firstAttribute="centerX" secondItem="qwK-AC-GAS" secondAttribute="centerX" id="Dk0-5k-8rU"/>
+                            <constraint firstItem="3OJ-MW-dCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="EWJ-v2-9wW"/>
+                            <constraint firstItem="qwK-AC-GAS" firstAttribute="top" secondItem="3OJ-MW-dCD" secondAttribute="bottom" constant="46" id="Eou-ra-H3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qwK-AC-GAS" secondAttribute="bottom" constant="431" id="eu3-4Y-vks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="3OJ-MW-dCD" id="rdI-39-nEz"/>
+                        <outlet property="labelName" destination="qwK-AC-GAS" id="XNV-Qd-gdu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="istanbul" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
